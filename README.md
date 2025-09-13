@@ -2,7 +2,6 @@
 
 [![Laravel](https://img.shields.io/badge/Laravel-10.x-red.svg)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.1+-blue.svg)](https://php.net)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
 **Sistema integral de gestión de transporte escolar** que conecta colegios, proveedores de transporte, conductores, padres de familia y estudiantes en una plataforma unificada.
@@ -475,10 +474,6 @@ docker run -p 8000:8000 route-tracker
 - Usar el **template de issues**
 - Proporcionar **pasos para reproducir**
 - Incluir **información del sistema**
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ## 📞 Soporte
 
