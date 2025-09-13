@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         cacheDirectory=".phpunit.cache"
+         backupGlobals="false"
+         failOnRisky="true"
+         failOnWarning="false"
+         stopOnError="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false">
+    <testsuites>
+        <testsuite name="Auth">
+            <file>./tests/Feature/AuthTest.php</file>
+        </testsuite>
+        <testsuite name="LoginValidacion">
+            <file>./tests/Feature/LoginValidacionTest.php</file>
+        </testsuite>
+        <testsuite name="LoginExitoso">
+            <file>./tests/Feature/LoginExitosoTest.php</file>
+        </testsuite>
+        <testsuite name="LoginFallido">
+            <file>./tests/Feature/LoginFallidoTest.php</file>
+        </testsuite>
+        <testsuite name="LoginSeguridad">
+            <file>./tests/Feature/LoginSeguridadTest.php</file>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+        <env name="SANCTUM_STATEFUL_DOMAINS" value="localhost,127.0.0.1"/>
+        <env name="SESSION_DOMAIN" value="localhost"/>
+    </php>
+</phpunit>
